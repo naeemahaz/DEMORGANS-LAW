@@ -1,0 +1,153 @@
+De Morgan's Laws
+
+Not (A and B) is the same as Not A or Not B.
+
+Not (A or B) is the same as Not A and Not B.
+
+Definition of De Morgan’s law: 
+
+The complement of the union of two sets is equal to the intersection of their complements and the complement of the intersection of two sets is equal to the union of their complements. These are called De Morgan’s laws.
+
+For any two finite sets A and B;
+
+(i) (A U B)' = A' ∩ B' (which is a De Morgan's law of union).
+
+(ii) (A ∩ B)' = A' U B' (which is a De Morgan's law of intersection).
+
+
+Proof of De Morgan’s law: (A U B)' = A' ∩ B'
+
+
+Let P = (A U B)' and Q = A' ∩ B'
+
+Let x be an arbitrary element of P then x ∈ P ⇒ x ∈ (A U B)'
+
+⇒ x ∉ (A U B)
+
+⇒ x ∉ A and x ∉ B
+
+⇒ x ∈ A' and x ∈ B'
+
+⇒ x ∈ A' ∩ B'
+
+⇒ x ∈ Q
+
+Therefore, P ⊂ Q …………….. (i)
+
+Again, let y be an arbitrary element of Q then y ∈ Q ⇒ y ∈ A' ∩ B'
+
+⇒ y ∈ A' and y ∈ B'
+
+⇒ y ∉ A and y ∉ B
+
+⇒ y ∉ (A U B)
+
+⇒ y ∈ (A U B)'
+
+⇒ y ∈ P
+
+Therefore, Q ⊂ P …………….. (ii)
+
+Now combine (i) and (ii) we get; P = Q i.e. (A U B)' = A' ∩ B'
+
+
+
+Proof of De Morgan’s law: (A ∩ B)' = A' U B'
+
+Let M = (A ∩ B)' and N = A' U B'
+
+Let x be an arbitrary element of M then x ∈ M ⇒ x ∈ (A ∩ B)'
+
+⇒ x ∉ (A ∩ B)
+
+⇒ x ∉ A or x ∉ B
+
+⇒ x ∈ A' or x ∈ B'
+
+⇒ x ∈ A' U B'
+
+⇒ x ∈ N
+
+Therefore, M ⊂ N …………….. (i)
+
+Again, let y be an arbitrary element of N then y ∈ N ⇒ y ∈ A' U B'
+
+⇒ y ∈ A' or y ∈ B'
+
+⇒ y ∉ A or y ∉ B
+
+⇒ y ∉ (A ∩ B)
+
+⇒ y ∈ (A ∩ B)'
+
+⇒ y ∈ M
+
+Therefore, N ⊂ M …………….. (ii)
+
+Now combine (i) and (ii) we get; M = N i.e. (A ∩ B)' = A' U B'
+
+
+
+
+Examples on De Morgan’s law: 
+
+1. If U = {j, k, l, m, n}, X = {j, k, m} and Y = {k, m, n}.
+
+Proof of De Morgan's law: (X ∩ Y)' = X' U Y'.
+
+Solution: 
+
+We know,  U = {j, k, l, m, n}
+
+X = {j, k, m}
+
+Y = {k, m, n}
+
+(X ∩ Y) = {j, k, m} ∩ {k, m, n}           
+
+           = {k, m} 
+
+Therefore, (X ∩ Y)' = {j, l, n}  ……………….. (i)
+
+Again, X = {j, k, m} so, X' = {l, n}
+
+and    Y = {k, m, n} so, Y' = {j, l}
+
+X' ∪ Y' = {l, n} ∪ {j, l}
+
+Therefore,  X' ∪ Y' = {j, l, n}   ……………….. (ii)
+
+Combining  (i)and (ii) we get;
+
+(X ∩ Y)' = X' U Y'.          Proved
+
+
+
+2. Let U = {1, 2, 3, 4, 5, 6, 7, 8}, P = {4, 5, 6} and Q = {5, 6, 8}. 
+Show that (P ∪ Q)' = P' ∩ Q'.
+
+Solution:
+
+We know, U = {1, 2, 3, 4, 5, 6, 7, 8}
+
+P = {4, 5, 6}
+
+Q = {5, 6, 8}
+
+P ∪ Q = {4, 5, 6} ∪ {5, 6, 8} 
+
+         = {4, 5, 6, 8}
+
+Therefore, (P ∪ Q)' = {1, 2, 3, 7}   ……………….. (i)
+
+Now P = {4, 5, 6} so, P' = {1, 2, 3, 7, 8}
+
+and Q = {5, 6, 8} so, Q' = {1, 2, 3, 4, 7}
+
+P' ∩ Q' = {1, 2, 3, 7, 8} ∩ {1, 2, 3, 4, 7}
+
+Therefore, P' ∩ Q' = {1, 2, 3, 7}   ……………….. (ii)
+
+Combining  (i)and (ii) we get;
+
+(P ∪ Q)' = P' ∩ Q'.          Proved
