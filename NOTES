@@ -151,3 +151,85 @@ Therefore, P' ∩ Q' = {1, 2, 3, 7}   ……………….. (ii)
 Combining  (i)and (ii) we get;
 
 (P ∪ Q)' = P' ∩ Q'.          Proved
+
+
+
+Reliability theory
+An engineering application of mathematical methods, concerned with the following problems: a) to devise ways of evaluating the reliability of industrial systems; b) to develop methods for evaluating the reliability of manufactured goods; and c) to develop methods for optimizing and improving the performance of complex industrial systems and their component elements during operation (this also includes storage and transportation). The reliability theorist introduces quantitative indices of reliability by constructing suitable mathematical models. In doing so (s)he must take into consideration such factors as the purpose of the system, the conditions under which it is to operate, and also economic factors. A broad range of mathematical methods, chief among which are probability theory and mathematical statistics, are used in reliability theory. This is because the events represented by the qualitative and quantitative reliability indices (failure, time before failure, repair time, renewal cost, etc.) are random. Other widely used methods are those of optimization theory, mathematical logic, etc.
+
+The concept of reliability includes the following elements: 1) freedom from failure; 2) long life; 3) amenability to repair. Not infrequently, however, it is the first element alone that has the decisive role. For example, the third element is quite unnecessary when dealing with disposable commodities.
+
+A fundamental notion in reliability theory is that of a failure, i.e. a gradual or sudden loss of the ability to operate. A formalized description of this notion is based on the following general scheme for the construction of mathematical models in reliability theory. Assume that the state of an industrial system is defined by a point  in a phase space , the elements of which are called "states" . The evolution in time of the states of the system is represented by a process , usually a stochastic process. Let  be a distinguished subset of , consisting of those states corresponding to the occurrence of a failure. By freedom from failure one means the property of the system to continuously maintain its operating capacity; the quantitative measure of this index is the time elapsing from a given instant to the instant the system enters a state in . Long life is the property of the system to maintain its operating capacity, with the necessary interruptions for repairs and maintenance as required to render its further service economically viable. Amenability to repair is determined by the degree to which the system lends itself to convenient maintenance and repair; these are measured quantitatively in terms of the costs or the time necessary to keep the system working.
+
+The most important reliability index of an industrial system is the probability of failure-free operation for a time , denoted by , i.e. the probability that the process  will not reach the subset  within time . The distribution function of the occurrence of a failure before time  is . If the density  exists, the function  is called the failure rate. In terms of probabilities,  is the conditional failure density given that the system has performed satisfactorily until time . Thus,  is the probability that the system will fail in the time interval , given that it has not failed before time .
+
+The reliability theorist employs various classes of functions . If  is a convex function, the failure distribution is called an increasing failure rate distribution. The class of such distributions is denoted by IFR. If  is a concave function, the failure distribution is said to have a decreasing failure rate. The corresponding class is denoted by DFR. Reliability theory also utilizes other non-parametric classes of distribution functions, such as IMFR (functions of an increasing mean failure rate), distributions for which the function
+
+
+is an increasing function, or the class NBO (new better than old): Distributions in this last class satisfy the condition
+
+
+for any , i.e. the failure distribution given that the system has already been operating for time  is greater than the unconditional distribution. This means that failures occur more frequently in a system already operating than in a new one. For some classes of distributions, theorems have been proved concerning the invariance of the failure distribution under formation of certain structures (series or parallel connections of elements, etc.). Very common in reliability theory are models in which the function  is defined parametrically. For example, the distribution of sudden failures is frequently assumed to be exponential,
+
+
+or given by the Weibull distribution
+
+
+etc.
+
+There are various procedures for increasing the reliability of industrial systems: standby, preventive inspection and repairs, and operation at diminished loads. By standby one means improving the reliability of a system by introducing some kind of redundancy — additional elements, assemblies, devices, which are not required to enable the system to function; additional time allowed for the performance of jobs; the use of redundant information; etc. In this connection one considers the following types of standby: structural (additional equipment), temporal (additional time), informational, functional (exploiting the capacity of the elements of the system to perform additional functions), and loaded. A structural standby may be in any of the following three states: a) unloaded; b) fully loaded; c) partly loaded. In a fully loaded standby the element carries the same load as a basic (working) element, and the failure rate of the standby element is the same as that of a basic element. In unloaded standby the element carries no load at all, so that no failures occur. In partly loaded standby the element carries a load lower than that of a basic element, so that its failure rate is lower than that of a basic element. A significant increase in reliability is achieved by renewal of failed elements — standby with renewal. If an element has one standby, carrying no load, the failure distribution function of each of the elements is , the distribution function of the time needed for renewal is , the switches are absolutely reliable, and the transition from the operation to the renewal and to standby operation is instantaneous, then the time to failure of the system with standby (i.e. the time to the first instant at which both elements are in a state of failure) is given by the formula
+
+
+where
+
+
+The investigation of systems with standby has given birth to a variety of purely mathematical problems — the development of a theory of controlled and semi-Markov processes, limit theorems for the sum of a random number of random variables, etc.
+
+Preventive maintenance comes into play while the system is still performing satisfactorily, but there are grounds to suppose that the failure probability has become high. The problems of prevention are usually connected with the solution of optimization problems: How to decide when the preventive servicing should begin, so that the total loss incurred by the servicing itself and by the possible failure prior to completion of servicing in a given time interval  should be minimal; how to organize the preventive maintenance so as to maximize the probability of failure-free operation in a given time interval, etc. For some failure distribution functions, including all functions of class DFR, preventive maintenance does not increase the mean time to failure. For DFR functions,  is a non-increasing function. An example is the distribution function
+
+
+for any constant . Various optimization problems arise in connection with the search for irregularities of a complex system: How to carry out the inspection so as to minimize the mean time necessary for the detection of faults; in what order to check the working ability of the components, etc.
+
+An essential field of reliability theory is concerned with the derivation of statistical inferences about the failure distribution based on data obtained in stand tests. The simplest mathematical models of stand tests are the following. Let  be the number of cells for testing articles. During testing, failed articles are either not replaced by new ones (test class B) or replaced by new ones (test class V). The length of the tests is determined by a stopping rule, e.g. by stipulating a bound  on the testing time, a bound  on the number of observed failures, etc. The major characteristic of the testing operation is the total gain , i.e. the sum of the times to failure of all tested articles in the interval . In testing according to the plan  one tests  articles, not replacing them by new ones if found faulty. Observations continue up to the -th failure. According to the plan , testing goes on until all  articles have failed; in the plan  one tests  articles up to time , where  is the failure time of the -th failed object. The failure times  serve as data to test hypotheses as to the form of the failure distribution function, e.g. whether it is of class DFR or IFR, etc.; the parameters of this distribution function must also be estimated. Estimates for the failure rate are obtained by isotone estimation methods. When testing according to the plan , one has the following pointwise unbiased estimator for the parameter  of the exponential distribution:
+
+
+where the total gain is
+
+
+The statistical problems involved in stand testing are quite varied; they demand the use of such branches of mathematical statistics as estimation theory and statistical hypotheses testing.
+
+A complicating factor is the dependence of the probability of failure-free performance on the regime  of testing:
+
+
+A more severe regime (increased temperatures, higher-amplitude vibrations, etc.) might be expected to bring on failures at earlier times. The problem of scaling reliability indices from certain regimes  to others  is one of the most pressing in reliability theory. Test plans have been applied in which regimes vary in time (e.g. plans with staggered loads). Mathematical models have been developed to rescale the results of accelerated tests to normal regimes. One approach to this type of problem is based on the hypothesis that tests during time  in a regime  are equivalent to tests in a regime  if the time  is determined from the condition .
+
+Another problem in reliability theory is to calculate the performance indices of a system made up of non-absolutely reliable components. For example, suppose it is required to estimate the reliability of the system according to the results of stand tests on the components. Let the system be represented as a consecutive chain of components of different types (no standby). Then the lower -confidence bound for the probability of failure-free operation of the system, , all components of which have been tested for a time  with no failures observed, is identical to the lower -confidence bound for the probability of failure-free operation of the type of component that has been tested least.
+
+An example of optimization in reliability theory is the problem of optimum fully loaded standby. Let  be the probability of failure-free operation of elements of type , and let  be the number of such elements. The probability of failure-free operation of the system is
+
+
+It is required to choose the numbers , , so that  is maximal and so as to fulfill the conditions
+
+
+which are treated as constraints on the total weight, volume, cost, etc., of the elements.
+
+In systems that allow for renewal of failed components, the evaluation of quantitative reliability indices is largely analogous to such computations in queueing theory. The arrival times of customers in the system correspond to the failure times, and the service times to the renewal times. The simplest mathematical model is that of a renewal process (see Renewal theory). Since the basic mathematical models of reliability theory allowing for renewal of failed elements are not amenable to explicit analytical solution, considerable attention is given to the use of asymptotic methods. In this context it is assumed that the renewal is "rapid" , i.e. the given renewal indices (such as the mean renewal times) become infinitely small in comparison to the analogous indices of failure-free performance intervals.
+
+References
+[1]	E.Yu. Barzilovich, V.A. Kashtanov, "Some mathematical problems in the theory of maintenance of complex systems" , Moscow (1971) (In Russian)
+[2]	R.E. Barlow, F. Proschan, "Mathematical theory of reliability" , Wiley (1965)
+[3]	R.E. Barlow, F. Proschan, "Statistical theory of reliability and lifetesting" , Holt, Rinehart & Winston (1975)
+[4]	B.V. Gnedenko, Yu.K. Belyaev, A.D. Solov'ev, "Mathematical methods of reliability theory" , Acad. Press (1969) (Translated from Russian)
+[5]	I.N. Kovalenko, "Studies in the analysis of reliability of complex systems" , Kiev (1975) (In Russian)
+[6]	B.A. Kozlov, I.A. Ushakov, "Reliability handbook" , Holt, Rinehart & Winston (1970) (Translated from Russian)
+[7]	Ya.B. Shor, "Statistical methods in analysis and control of quality and reliability" , Moscow (1962) (In Russian)
+
+Comments
+The notions of fully loaded standby and unloaded standby are known as warm standby and cold standby, respectively, in the Western literature.
+
+References
+[a1]	I.B. Gertsbakh, "Statistical reliability theory" , Birkhäuser (1989) (Translated from Russian)
+[a2]	E. Pieruschka, "Principles of reliability" , Prentice-Hall (1963)
+[a3]	W.H. Pierce, "Failure tolerant computer design" , Acad. Press (1965)
+[a4]	F. Beichelt, P. Franken, "Zuverlässigkeit und Instandhaltung" , VEB Verlag Technik (1983)
+How to Cite This Entry:
